@@ -8,7 +8,7 @@ __you should change some parameters according to your screen resolution__.
 ----
 
 ## 2. First directory - '*Scrambler*':
-This program can help you with ***encrypting any files** on your computer.
+This program can help you with ***encrypting any files*** on your computer.
 Don't forget that __you must save your generated key__ if you want to decrypt files in the future!
     This project *bases on this video* -- 'https://www.youtube.com/watch?v=vFbqJoGFB5k', but I've changed it for me.
     
