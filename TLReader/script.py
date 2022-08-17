@@ -7,17 +7,17 @@ from email.mime.audio import MIMEAudio
 
 
 def exact_process():    
-    os.chdir('h://Programmes//SCRIPTS//Python//Projects//Main//TLReader//log//')
+    os.chdir('h://Programmes//SCRIPTS//Python//Projects//Main//TLReader//log//') # путь до текстового файла
     with open('to_read.txt', 'w', encoding='utf-8') as w:
         w.write(const.DATA[0])
     w.close()
 
     with open('to_read.txt', 'r', encoding='utf-8') as r:
         data = r.read()
-    os.chdir('h://Programmes//SCRIPTS//Python//Projects//Main//TLReader//')
+    os.chdir('h://Programmes//SCRIPTS//Python//Projects//Main//TLReader//') # текущая директория
 
     tts = pyttsx3.init()
-    ru_vocie_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MSTTS_V110_ruRU_PavelM"
+    ru_vocie_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MSTTS_V110_ruRU_PavelM" # голос из реестра
     tts.setProperty('voice', ru_vocie_id)
     tts.setProperty('rate', 250)
     tts.setProperty('volume', 1)
