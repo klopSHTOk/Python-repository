@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block title %}
+    <title>Library</title>
+    {% endblock %}
+</head>
+<body>
+    <br>
+    {% block sidebar %}
+
+    {% endblock %}
+    </br>
+
+    <br>
+    {% block content %}
+
+    {% endblock %}
+    </br>
+    
+    {% load static %}
+    <br>
+        <img src="{% static 'images/fitness.jpg' %}" alt="Some picture">
+    </br>
+
+</body>
+</html>
